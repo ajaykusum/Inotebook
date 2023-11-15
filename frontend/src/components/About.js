@@ -7,7 +7,7 @@ const About = (props) => {
   const handleSubmit = async (e) => { 
       try{
           e.preventDefault();
-          const url = "http://localhost:5000/api/contact/postfeedback/";
+          const url = "https://inotebook-tovg.onrender.com/api/contact/postfeedback/";
           const response = await fetch(url, {
           method: 'POST',
           headers: {

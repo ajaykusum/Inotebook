@@ -5,7 +5,7 @@ const Login = (props) => {
     let navigate=useNavigate();//for history
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const url = "http://localhost:5000/api/auth/login/";
+        const url = "https://inotebook-tovg.onrender.com/api/auth/login/";
         const response = await fetch(url, {
             method: 'POST',
             headers: {

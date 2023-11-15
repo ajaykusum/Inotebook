@@ -11,7 +11,7 @@ const SignUp = (props) => {
       props.showAlert("Password and confirm Password are different!",'danger');
     }
     else{
-      const url = "http://localhost:5000/api/auth/createUser/";
+      const url = "https://inotebook-tovg.onrender.com/api/auth/createUser/";
       const response = await fetch(url, {
       method: 'POST',
       headers: {
