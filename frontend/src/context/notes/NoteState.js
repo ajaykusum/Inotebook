@@ -6,7 +6,7 @@ const NoteState = (props) => {
   const [notes, setNotes] = useState(notesInitial)
   //Fetching Nodes
   const getNotes=async()=>{
-    const url = `${host}/api/notes/fetchallnotes`
+    const url = `https://inotebook-tovg.onrender.com/api/notes/fetchallnotes`
     const response = await fetch(url, {
       method: 'GET',
       headers: {
@@ -21,7 +21,7 @@ const NoteState = (props) => {
   //Add a note
   const addNote = async(title, description, tag) => {
     //Todo: Api call 
-    const url = `${host}/api/notes/addnote`
+    const url = `https://inotebook-tovg.onrender.com/api/notes/addnote`
     const response = await fetch(url, {
       method: 'POST',
       headers: {
@@ -49,7 +49,7 @@ const NoteState = (props) => {
   //Delete a note
   const deleteNote = async(id) => {
     //api call  
-    const url = `${host}/api/notes/deletenote/${id}`
+    const url = `https://inotebook-tovg.onrender.com/api/notes/deletenote/${id}`
     const response = await fetch(url, {
       method: 'DELETE',
       headers: {
@@ -64,7 +64,7 @@ const NoteState = (props) => {
   //Edit a note
   const editNote = async (id, title, description, tag) => {
     //Api Call
-    const url = `${host}/api/notes/updatenote/${id}`
+    const url = `https://inotebook-tovg.onrender.com/api/notes/updatenote/${id}`
     const response = await fetch(url, {
       method: 'PUT',
       headers: {
